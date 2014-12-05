@@ -753,7 +753,7 @@ public class TestEnvironment {
         env.flop(String.format("%s within %d ms", errorMsg, timeoutMillis));
       }
 
-      return value;
+      return Optional.of<T>(value);
     }
 
     /**
